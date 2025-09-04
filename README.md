@@ -35,9 +35,3 @@ This is a **React.js** application for managing hospital data. It displays hospi
 ```bash
 git clone https://github.com/your-username/hospital-management.git
 cd hospital-management
-**2. Install dependencies:**
-npm install
-**3. Start the development server:**
-npm start
-**4. Open your browser and go to:**
-http://localhost:3000
