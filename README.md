@@ -22,6 +22,13 @@ This is a **React.js** application for managing hospital data. It displays hospi
 
 ---
 
+## Live Demo
+
+Check out the deployed application here:  
+[Hospital Management App](https://hospital-site-o8aspqqql-fadia-haris-projects.vercel.app/)
+
+---
+
 ## Getting Started
 
 ### Prerequisites
@@ -31,7 +38,7 @@ This is a **React.js** application for managing hospital data. It displays hospi
 
 ### Installation
 
-**1. Clone the repository:**
+1. Clone the repository:
 ```bash
 git clone https://github.com/your-username/hospital-management.git
 cd hospital-management
