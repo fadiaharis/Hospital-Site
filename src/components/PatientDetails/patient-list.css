@@ -1,0 +1,22 @@
+.patient-count {
+  padding: 16px;
+}
+
+.list-header {
+  border-bottom: 1px solid rgb(184, 182, 182);
+  min-width: 0px;
+  margin: 16px  12px ;
+}
+
+.list-header h2 {
+  font-size: large;
+  font-weight: bold;
+  color: rgb(9, 11, 61);
+}
+
+.filter-container{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 12px;
+}

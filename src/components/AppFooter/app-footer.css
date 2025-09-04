@@ -1,0 +1,28 @@
+.app-footer {
+  display: flex;
+  justify-content: space-between; /* left & right */
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #3e3e47; /* dark background */
+  color: #fff;            /* white text */
+  font-size: 14px;
+}
+
+.app-footer a {
+  color: #aaa;
+  margin-left: 15px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.app-footer a:hover {
+  color: #fff;
+}
+
+.app-footer-left {
+  font-weight: 500;
+}
+
+.app-footer-right {
+  display: flex;
+}

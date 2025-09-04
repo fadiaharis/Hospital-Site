@@ -1,0 +1,12 @@
+.search-patient {
+  margin: 16px;
+  padding: 8px;
+  border: 1px solid rgb(184, 182, 182);
+  border-radius: 4px;
+}
+
+.search-patient input {
+  border: none;
+  outline: none;
+  flex: 1;
+}

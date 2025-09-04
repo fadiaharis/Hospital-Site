@@ -1,0 +1,86 @@
+/* Header Container */
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 60px;
+  background-color:#002d55;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Header Title */
+.header-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-right: auto; /* Pushes nav items to the right */
+}
+
+/* Navigation Items */
+.app-header span:not(.header-title) {
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+  position: relative;
+}
+
+/* Hover Effect */
+.app-header span:not(.header-title):hover {
+  color: #3182ce;
+  background-color: #ebf8ff;
+}
+
+/* Active State */
+.app-header span:not(.header-title).active {
+  color: #95a9bd;
+  font-weight: 600;
+}
+
+/* Underline Animation */
+.app-header span:not(.header-title):after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #3182ce;
+  transition: all 0.3s ease;
+}
+
+.app-header span:not(.header-title):hover:after {
+  left: 0;
+  width: 100%;
+}
+
+/* Logout Special Styling */
+.app-header span:last-child {
+  color: #ec7171;
+  margin-left: 2rem;
+}
+
+.app-header span:last-child:hover {
+  background-color: #fff5f5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-header {
+    padding: 0 1rem;
+  }
+  
+  .app-header span:not(.header-title) {
+    padding: 0.5rem 0.7rem;
+    margin-left: 0.5rem;
+    font-size: 0.85rem;
+  }
+}

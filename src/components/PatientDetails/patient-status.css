@@ -1,0 +1,31 @@
+.patient-status {
+  display: inline-flex;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.patient-status span {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+  background-color: #f8fafc;
+  color: #64748b;
+  border-right: 1px solid #e2e8f0;
+}
+
+.patient-status span:last-child {
+  border-right: none;
+}
+
+.patient-status span:hover {
+  background-color: #e6e7e7;
+}
+
+.patient-status span.active {
+  background-color: #506b97;
+  color: white;
+}

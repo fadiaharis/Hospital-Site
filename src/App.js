@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useState} from "react";
+import "./App.css";
+import AppFooter from "./components/AppFooter/AppFooter";
+import AppHeader from "./components/AppHeader/app-header";
+import PatientLists from "./pages/patient-lists";
+import About from "./pages/about";
+import Contact from "./pages/contact";
 
 function App() {
+
+   const [activeScreen, setActiveScreen] = useState("Patient Details");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AppHeader onMenuSelect={setActiveScreen} />
+      <div className="app-body">
+        {activeScreen === "Patient Details" && <PatientLists />}
+        {activeScreen === "About Us" && <About />}
+        {activeScreen === "Contact" && <Contact />}
+      </div>
+      <AppFooter />
     </div>
   );
 }
